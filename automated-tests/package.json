@@ -1,0 +1,22 @@
+{
+  "name": "cloudpi-qa-automation",
+  "version": "1.0.0",
+  "description": "Automated tests for CloudPi login and authentication",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://vk4aws.cloudpi.ai"
+  },
+  "keywords": ["playwright", "testing", "automation", "qa", "cloudpi"],
+  "author": "CloudPi QA Team",
+  "license": "PROPRIETARY",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
